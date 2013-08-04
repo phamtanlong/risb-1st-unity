@@ -1,8 +1,12 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\MouseOrbit.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\MainGUI.cs">
     <Files>
-      <File FileName="Assets\Scripts\MouseOrbit.cs" Line="10" Column="29" />
+      <File FileName="Assets\Scripts\MouseOrbit.cs" Line="3" Column="1" />
+      <File FileName="Assets\Scripts\ZoomObject.cs" Line="12" Column="3" />
+      <File FileName="Assets\Scripts\MainGUI.cs" Line="15" Column="2" />
+      <File FileName="Assets\Scripts\Main1.cs" Line="8" Column="5" />
+      <File FileName="Assets\Scripts\MainMatTruoc.cs" Line="9" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
