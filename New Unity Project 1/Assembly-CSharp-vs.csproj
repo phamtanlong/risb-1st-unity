@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\MouseOrbit.cs" />
+     <Compile Include="Assets\Scripts\MouseOrbitFast.cs" />
      <Compile Include="Assets\Scripts\ZoomObject.cs" />
      <Compile Include="Assets\Scripts\menu.cs" />
   </ItemGroup>
