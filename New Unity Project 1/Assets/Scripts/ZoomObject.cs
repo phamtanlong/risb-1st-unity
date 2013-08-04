@@ -3,14 +3,13 @@ using System.Collections;
 
 public class ZoomObject : MonoBehaviour {
 
-	int limitInfer = 2;
+	int limitInfer = 5;
 	int limitSuper = 100;
 	int speed = 5; //the speed of zoom
 	
 	// Use this for initialization
 	void Start ()
 	{
-	
 	}
 	
 	// Update is called once per frame
