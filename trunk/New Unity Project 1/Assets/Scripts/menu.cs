@@ -13,6 +13,7 @@ public class menu : MonoBehaviour
 		GUI.Box (new Rect (45, 0, 90, 90), "", logoStyle);
 		
 		GUI.Label(new Rect(12, 85, 170, 20), "http://tsqtt.edu.vn", boxLabelStyle);
+		
 				
 		#region CẤU TẠO TỦ TỔNG ĐÀI
 		// Group Cấu tạo tủ tổng đài
@@ -117,9 +118,9 @@ public class menu : MonoBehaviour
 			
 		}
 		
-		//Thoát
-		if (GUI.Button (new Rect (1250, 560, 100, 40), "Thoát")) {
-			
+		//Thoát 1250 560
+		if (GUI.Button (new Rect (Screen.width - 120, Screen.height - 50, 100, 40), "Thoát")) {
+			print(Screen.width + " - " + Screen.height);
 		}
 	}	
 }
