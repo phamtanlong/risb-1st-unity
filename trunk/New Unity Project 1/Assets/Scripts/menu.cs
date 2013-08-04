@@ -10,7 +10,7 @@ public class menu : MonoBehaviour
 	void OnGUI ()
 	{
 		//logo truong
-		GUI.Box (new Rect (45, 0, 90, 90), "", logoStyle);
+		GUI.Box (new Rect (50, 0, 60, 90), "", logoStyle);
 		
 		GUI.Label(new Rect(12, 85, 170, 20), "http://tsqtt.edu.vn", boxLabelStyle);
 		
