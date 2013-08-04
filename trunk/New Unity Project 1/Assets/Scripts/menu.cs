@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Diagnostics;
+using System.IO;
 
 public class menu : MonoBehaviour
 {
@@ -25,27 +27,27 @@ public class menu : MonoBehaviour
 
 		// Tổng thể
 		if (GUI.Button (new Rect (20, 140, 150, 20), "Tổng thể")) {
-			
+			Application.LoadLevel("TongThe");
 		}
 
 		// Mặt trước
 		if (GUI.Button (new Rect (20, 165, 150, 20), "Mặt trước")) {
-			
+			Application.LoadLevel("MatTruoc");
 		}
 		
 		//Mặt trong
 		if (GUI.Button (new Rect (20, 190, 150, 20), "Mặt trong")) {
-			
+			Application.LoadLevel("MatTrong");
 		}
 		
 		//Khung tủ
 		if (GUI.Button (new Rect (20, 215, 150, 20), "Khung tủ")) {
-			
+			Application.LoadLevel("KhungTu");
 		}
 		
 		//Mặt sau
 		if (GUI.Button (new Rect (20, 240, 150, 20), "Mặt sau")) {
-			
+			Application.LoadLevel("MatSau");
 		}
 		#endregion
 		
@@ -58,28 +60,28 @@ public class menu : MonoBehaviour
 		GUI.Label(new Rect(12, 280, 170, 20), "CẤU TẠO BẢNG MẠCH", boxLabelStyle);
 		
 		//Bảng mach CPU
-		if (GUI.Button (new Rect (20, 305, 150, 20), "Mặt sau")) {
-			
+		if (GUI.Button (new Rect (20, 305, 150, 20), "Bảng mạch CPU")) {
+			Application.LoadLevel("BangMachCPU");
 		}
 		
 		//Bảng mach luồng E1
 		if (GUI.Button (new Rect (20, 330, 150, 20), "Bảng mạch luồng E1")) {
-			
+			Application.LoadLevel("BangMachLuongE1");
 		}
 		
 		//Bảng mach thuê bao
 		if (GUI.Button (new Rect (20, 355, 150, 20), "Bảng mạch thuê bao")) {
-			
+			Application.LoadLevel("BangMachThueBao");
 		}
 		
 		//Bảng mach CO, ĐKX
 		if (GUI.Button (new Rect (20, 380, 150, 20), "Bảng mạch CO, ĐKX")) {
-			
+			Application.LoadLevel("BangMachTrungKe");
 		}
 		
 		//Bảng mạch nguồn
 		if (GUI.Button (new Rect (20, 405, 150, 20), "Bảng mạch nguồn")) {
-			
+			Application.LoadLevel("BangMachNguon");
 		}
 		#endregion
 		
@@ -93,7 +95,15 @@ public class menu : MonoBehaviour
 		
 		//Tháo lắp
 		if (GUI.Button (new Rect (20, 465, 150, 20), "Tháo / Lắp")) {
-			
+			print (Directory.GetCurrentDirectory() + "\\ThaoLapT64S\\module1.exe");
+			Process.Start(Directory.GetCurrentDirectory() + "\\ThaoLapT64S\\UniKeyNT.exe");
+			/*
+			string path = Directory.GetCurrentDirectory() + "\\ThaoLapT64S\\module1";
+			Process foo = new Process();
+			foo.StartInfo.FileName = path;
+			foo.StartInfo.Arguments = "/NCRC";
+			foo.Start();
+			*/
 		}
 		
 		//Đấu nối
@@ -115,12 +125,14 @@ public class menu : MonoBehaviour
 		
 		//Khai báo
 		if (GUI.Button (new Rect (20, 575, 150, 20), "Hướng dẫn sử dụng")) {
-			
+			Process.Start(Directory.GetCurrentDirectory() + "\\Doc\\FAQ.doc");
 		}
 		
 		//Thoát 1250 560
 		if (GUI.Button (new Rect (Screen.width - 120, Screen.height - 50, 100, 40), "Thoát")) {
-			print(Screen.width + " - " + Screen.height);
+			print("Thoat");
+			
+			Application.Quit();
 		}
 	}	
 }
