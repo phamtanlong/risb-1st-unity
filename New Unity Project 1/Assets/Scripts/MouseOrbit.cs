@@ -4,8 +4,6 @@ using System.Collections;
 
 public class MouseOrbit : MonoBehaviour 
 {
-	bool mouseIsDown = false;
-	
     public Transform target;
     public float distance = 10.0f;
 
