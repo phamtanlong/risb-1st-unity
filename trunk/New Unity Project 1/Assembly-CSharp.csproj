@@ -46,6 +46,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\MouseOrbit.cs" />
      <Compile Include="Assets\Scripts\ZoomObject.cs" />
+     <Compile Include="Assets\Scripts\menu.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
