@@ -5,16 +5,22 @@ public class menu : MonoBehaviour
 {
 	
 	public GUIStyle logoStyle;
-	public Texture2D logo;
+	public GUIStyle boxLabelStyle;
 	
 	void OnGUI ()
 	{
 		//logo truong
 		GUI.Box (new Rect (45, 0, 90, 90), "", logoStyle);
+		
+		GUI.Label(new Rect(12, 85, 170, 20), "http://tsqtt.edu.vn", boxLabelStyle);
 				
-		#region Cau tao tu tong dai
+		#region CẤU TẠO TỦ TỔNG ĐÀI
 		// Group Cấu tạo tủ tổng đài
-		GUI.Box (new Rect (10, 110, 170, 160), "CẤU TẠO TỦ TỔNG ĐÀI");
+		GUI.Box (new Rect (10, 110, 170, 160), "");
+		
+		//Label of box 1
+		GUI.Label(new Rect(12, 115, 170, 20), "CẤU TẠO TỦ TỔNG ĐÀI", boxLabelStyle);
+		
 
 		// Tổng thể
 		if (GUI.Button (new Rect (20, 140, 150, 20), "Tổng thể")) {
@@ -45,7 +51,10 @@ public class menu : MonoBehaviour
 		
 		#region Cau tao bang mach
 		// Group Cấu tạo bảng mạch
-		GUI.Box (new Rect (10, 275, 170, 160), "CẤU TẠO BẢNG MẠCH");
+		GUI.Box (new Rect (10, 275, 170, 160), "");
+		
+		//Label of box 2
+		GUI.Label(new Rect(12, 280, 170, 20), "CẤU TẠO BẢNG MẠCH", boxLabelStyle);
 		
 		//Bảng mach CPU
 		if (GUI.Button (new Rect (20, 305, 150, 20), "Mặt sau")) {
@@ -76,7 +85,10 @@ public class menu : MonoBehaviour
 		
 		#region Khai thác và sử dụng
 		// Group KHAI THAC VA SU DUNG
-		GUI.Box (new Rect (10, 440, 170, 105), "KHAI THÁC VÀ SỬ DỤNG");
+		GUI.Box (new Rect (10, 440, 170, 105), "");
+		
+		//Label of box 3
+		GUI.Label(new Rect(12, 445, 170, 20), "KHAI THÁC VÀ SỬ DỤNG", boxLabelStyle);
 		
 		//Tháo lắp
 		if (GUI.Button (new Rect (20, 465, 150, 20), "Tháo / Lắp")) {
@@ -95,12 +107,19 @@ public class menu : MonoBehaviour
 		#endregion
 		
 		// Group HUONG DAN SU DUNG
-		GUI.Box (new Rect (10, 550, 170, 50), "HƯỚNG DẪN SỬ DỤNG");
+		GUI.Box (new Rect (10, 550, 170, 50), "");
+		
+		//Label of box 4
+		GUI.Label(new Rect(10, 555, 170, 20), "HƯỚNG DẪN SỬ DỤNG", boxLabelStyle);
 		
 		//Khai báo
 		if (GUI.Button (new Rect (20, 575, 150, 20), "Hướng dẫn sử dụng")) {
 			Application.LoadLevel (14);
 		}
 		
+		//Thoát
+		if (GUI.Button (new Rect (1250, 560, 100, 40), "Thoát")) {
+			Application.LoadLevel (14);
+		}
 	}	
 }
