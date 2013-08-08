@@ -95,15 +95,7 @@ public class menu : MonoBehaviour
 		
 		//Tháo lắp
 		if (GUI.Button (new Rect (20, 465, 150, 20), "Tháo / Lắp")) {
-			print (Directory.GetCurrentDirectory() + "\\ThaoLapT64S\\module1.exe");
-			Process.Start(Directory.GetCurrentDirectory() + "\\ThaoLapT64S\\UniKeyNT.exe");
-			/*
-			string path = Directory.GetCurrentDirectory() + "\\ThaoLapT64S\\module1";
-			Process foo = new Process();
-			foo.StartInfo.FileName = path;
-			foo.StartInfo.Arguments = "/NCRC";
-			foo.Start();
-			*/
+			Application.LoadLevel("ThaoLap");
 		}
 		
 		//Đấu nối

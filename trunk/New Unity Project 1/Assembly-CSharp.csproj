@@ -47,9 +47,53 @@
      <Compile Include="Assets\Scripts\Cube.cs" />
      <Compile Include="Assets\Scripts\MouseOrbit.cs" />
      <Compile Include="Assets\Scripts\MouseOrbitFast.cs" />
+     <Compile Include="Assets\Scripts\MoveController.cs" />
+     <Compile Include="Assets\Scripts\MoveController2.cs" />
+     <Compile Include="Assets\Scripts\ShowBoard\CPU.cs" />
+     <Compile Include="Assets\Scripts\ShowBoard\ThueBao.cs" />
+     <Compile Include="Assets\Scripts\ShowTipCard\Show_CardSUB1.cs" />
+     <Compile Include="Assets\Scripts\ShowTipCard\Show_CardSUB2.cs" />
+     <Compile Include="Assets\Scripts\ShowTipCard\Show_CardSUB3.cs" />
+     <Compile Include="Assets\Scripts\ShowTipCard\Show_CardSUB4.cs" />
+     <Compile Include="Assets\Scripts\ShowTipCard\Show_CardSUB5.cs" />
+     <Compile Include="Assets\Scripts\ShowTipCard\Show_CardSUB6.cs" />
+     <Compile Include="Assets\Scripts\ShowTipCard\Show_CardSUB7.cs" />
+     <Compile Include="Assets\Scripts\ShowTipCard\Show_CardSUB8.cs" />
+     <Compile Include="Assets\Scripts\ShowTipCard\Show_LED.cs" />
+     <Compile Include="Assets\Scripts\ShowTipCard\Show_RJ45.cs" />
+     <Compile Include="Assets\Scripts\ShowTipCard\Show_TrungKe.cs" />
+     <Compile Include="Assets\Scripts\ShowTipCard\setSingleton.cs" />
+     <Compile Include="Assets\Scripts\ShowTipPower\LEDE1.cs" />
+     <Compile Include="Assets\Scripts\ShowTipPower\LoiPower1.cs" />
+     <Compile Include="Assets\Scripts\ShowTipPower\LoiPower2.cs" />
+     <Compile Include="Assets\Scripts\ShowTipPower\NguonPower1.cs" />
+     <Compile Include="Assets\Scripts\ShowTipPower\NguonPower2.cs" />
+     <Compile Include="Assets\Scripts\ShowTipPower\Power1.cs" />
+     <Compile Include="Assets\Scripts\ShowTipPower\Power2.cs" />
+     <Compile Include="Assets\Scripts\ShowTipPower\PowerArea.cs" />
+     <Compile Include="Assets\Scripts\ShowTipPower\ResetPower1.cs" />
+     <Compile Include="Assets\Scripts\ShowTipPower\ResetPower2.cs" />
+     <Compile Include="Assets\Scripts\ShowTipPower\SynE1.cs" />
+     <Compile Include="Assets\Scripts\ShowTipPower\ThongGio.cs" />
+     <Compile Include="Assets\Scripts\ShowTipPower\Tru5Power1.cs" />
+     <Compile Include="Assets\Scripts\ShowTipPower\Tru5Power2.cs" />
+     <Compile Include="Assets\Scripts\ShowTipPower\_12Power1.cs" />
+     <Compile Include="Assets\Scripts\ShowTipPower\_12Power2.cs" />
+     <Compile Include="Assets\Scripts\ShowTipPower\_48Power1.cs" />
+     <Compile Include="Assets\Scripts\ShowTipPower\_48Power2.cs" />
+     <Compile Include="Assets\Scripts\ShowTipPower\_5Power1.cs" />
+     <Compile Include="Assets\Scripts\ShowTipPower\_5Power2.cs" />
+     <Compile Include="Assets\Scripts\ShowTipPower\_75Power1.cs" />
+     <Compile Include="Assets\Scripts\ShowTipPower\_75Power2.cs" />
      <Compile Include="Assets\Scripts\ZoomObject.cs" />
      <Compile Include="Assets\Scripts\menu.cs" />
      <Compile Include="Assets\Scripts\test.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{8A372BAF-BA95-0346-D5FC-D82F8865A500}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+    <ProjectReference Include="Assembly-UnityScript-firstpass.unityproj">
+      <Project>{BE051A15-E501-BE1B-C75D-2D2D11F97DF9}</Project>      <Name>Assembly-UnityScript-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
