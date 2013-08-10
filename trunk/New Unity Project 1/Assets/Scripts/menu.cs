@@ -8,13 +8,29 @@ public class menu : MonoBehaviour
 	
 	public GUIStyle logoStyle;
 	public GUIStyle boxLabelStyle;
+	string imgPath = Directory.GetCurrentDirectory() + "\\Assets\\Images\\logo.jpg";
+	Texture2D logoImg;
+	
+	void Start() 
+	{
+		
+	}
 	
 	void OnGUI ()
 	{
+		//Label of box
+		boxLabelStyle.fontSize = 14;
+		boxLabelStyle.normal.textColor = Color.blue;
+		
+		//logo
+		//logoImg = Resources.Load("logo.jpg");
+		//logoStyle.normal.background = ;
+		
+		
 		//logo truong
 		GUI.Box (new Rect (50, 0, 60, 90), "", logoStyle);
 		
-		GUI.Label(new Rect(12, 85, 170, 20), "http://tsqtt.edu.vn", boxLabelStyle);
+		GUI.Label(new Rect(40, 85, 170, 20), "http://tsqtt.edu.vn", boxLabelStyle);
 		
 				
 		#region CẤU TẠO TỦ TỔNG ĐÀI
@@ -28,26 +44,31 @@ public class menu : MonoBehaviour
 		// Tổng thể
 		if (GUI.Button (new Rect (20, 140, 150, 20), "Tổng thể")) {
 			Application.LoadLevel("TongThe");
+			audio.Play();
 		}
 
 		// Mặt trước
 		if (GUI.Button (new Rect (20, 165, 150, 20), "Mặt trước")) {
 			Application.LoadLevel("MatTruoc");
+			audio.Play();
 		}
 		
 		//Mặt trong
 		if (GUI.Button (new Rect (20, 190, 150, 20), "Mặt trong")) {
 			Application.LoadLevel("MatTrong");
+			audio.Play();
 		}
 		
 		//Khung tủ
 		if (GUI.Button (new Rect (20, 215, 150, 20), "Khung tủ")) {
 			Application.LoadLevel("KhungTu");
+			audio.Play();
 		}
 		
 		//Mặt sau
 		if (GUI.Button (new Rect (20, 240, 150, 20), "Mặt sau")) {
 			Application.LoadLevel("MatSau");
+			audio.Play();
 		}
 		#endregion
 		
@@ -62,26 +83,31 @@ public class menu : MonoBehaviour
 		//Bảng mach CPU
 		if (GUI.Button (new Rect (20, 305, 150, 20), "Bảng mạch CPU")) {
 			Application.LoadLevel("BangMachCPU");
+			audio.Play();
 		}
 		
 		//Bảng mach luồng E1
 		if (GUI.Button (new Rect (20, 330, 150, 20), "Bảng mạch luồng E1")) {
 			Application.LoadLevel("BangMachLuongE1");
+			audio.Play();
 		}
 		
 		//Bảng mach thuê bao
 		if (GUI.Button (new Rect (20, 355, 150, 20), "Bảng mạch thuê bao")) {
 			Application.LoadLevel("BangMachThueBao");
+			audio.Play();
 		}
 		
 		//Bảng mach CO, ĐKX
 		if (GUI.Button (new Rect (20, 380, 150, 20), "Bảng mạch CO, ĐKX")) {
 			Application.LoadLevel("BangMachTrungKe");
+			audio.Play();
 		}
 		
 		//Bảng mạch nguồn
 		if (GUI.Button (new Rect (20, 405, 150, 20), "Bảng mạch nguồn")) {
 			Application.LoadLevel("BangMachNguon");
+			audio.Play();
 		}
 		#endregion
 		
@@ -96,16 +122,18 @@ public class menu : MonoBehaviour
 		//Tháo lắp
 		if (GUI.Button (new Rect (20, 465, 150, 20), "Tháo / Lắp")) {
 			Application.LoadLevel("ThaoLap");
+			audio.Play();
 		}
 		
 		//Đấu nối
 		if (GUI.Button (new Rect (20, 490, 150, 20), "Đấu nối")) {
-			
+			audio.Play();
 		}
 		
 		//Khai báo
 		if (GUI.Button (new Rect (20, 515, 150, 20), "Khai báo")) {
-			
+			Process.Start(Directory.GetCurrentDirectory() + "\\Khai_bao_T64S1\\PMT64S1.exe");
+			audio.Play();
 		}
 		#endregion
 		
@@ -118,12 +146,13 @@ public class menu : MonoBehaviour
 		//Khai báo
 		if (GUI.Button (new Rect (20, 575, 150, 20), "Hướng dẫn sử dụng")) {
 			Process.Start(Directory.GetCurrentDirectory() + "\\Doc\\FAQ.doc");
+			audio.Play();
 		}
 		
 		//Thoát 1250 560
 		if (GUI.Button (new Rect (Screen.width - 120, Screen.height - 50, 100, 40), "Thoát")) {
 			print("Thoat");
-			
+			audio.Play();
 			Application.Quit();
 		}
 	}	

@@ -33,8 +33,8 @@ public class MouseOrbitFast : MonoBehaviour
 		{
 	        if (target)
 	        {
-	            x += 2.5f*Input.GetAxis("Mouse X") * xSpeed * Time.deltaTime;
-	            y -= 2.5f*Input.GetAxis("Mouse Y") * ySpeed * Time.deltaTime;
+	            x += 0.7f*Input.GetAxis("Mouse X") * xSpeed * Time.deltaTime;
+	            y -= 0.7f*Input.GetAxis("Mouse Y") * ySpeed * Time.deltaTime;
 	
 	            y = ClampAngle(y, yMinLimit, yMaxLimit);
 	
