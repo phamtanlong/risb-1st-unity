@@ -18,7 +18,7 @@ public class BangMachLuongE1 : MonoBehaviour {
 	
 	void OnGUI() {
 	if (isShow == true)
-		GUI.Label(new Rect(Screen.width/2, Screen.height/2 + 200, 100, 20), tip, labelStyle);
+		GUI.Label(new Rect(Screen.width/2, Screen.height/2 + 260, 100, 20), tip, labelStyle);
     }
 		
 	void OnMouseEnter() {
