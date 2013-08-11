@@ -1,11 +1,8 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\ShowTipBangMach\BangMachCPU.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\MoveCamera.js">
     <Files>
-      <File FileName="Assets\Scripts\MoveControllerXY.cs" Line="37" Column="18" />
-      <File FileName="Assets\Scripts\MoveControllerZ.cs" Line="55" Column="22" />
-      <File FileName="Assets\Scripts\Main.cs" Line="6" Column="2" />
-      <File FileName="Assets\Scripts\ShowTipBangMach\BangMachCPU.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\MoveCamera.js" Line="63" Column="20" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

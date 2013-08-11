@@ -8,7 +8,7 @@ public class menu : MonoBehaviour
 	
 	public GUIStyle logoStyle;
 	public GUIStyle boxLabelStyle;
-	string imgPath = Directory.GetCurrentDirectory() + "\\Assets\\Images\\logo.jpg";
+//	string imgPath = Directory.GetCurrentDirectory() + "\\Assets\\Images\\logo.jpg";
 	Texture2D logoImg;
 	
 	void Start() 

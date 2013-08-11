@@ -17,14 +17,9 @@ using System.Collections;
 		}
 		
 		void OnGUI() {
-			
 			if (isShow == true)
 				GUI.Label(new Rect(Screen.width/2, Screen.height/2 + 260, 100, 20), tip, labelStyle);
 	    }
-		
-		int n = 0;
-		
-		
 		
 		void OnMouseOver() {
 			isShow = true;
