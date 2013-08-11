@@ -8,8 +8,8 @@ public class MoveControllerZ : MonoBehaviour
 {
 	//reference
 	public MoveControllerXY nap;
-	public bool itCanMove = false;
 	
+	public bool itCanMove = true;
 	public bool isInFirstTime = true;
 	public bool isOutside = false;
 	//

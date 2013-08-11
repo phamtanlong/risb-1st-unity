@@ -16,7 +16,6 @@ public class MoveControllerXY : MonoBehaviour
 	public MoveControllerZ obj6;
 	public MoveControllerZ obj7;
 	
-	
 	//
 	private bool enableMove = true;
 	private float RADIUS = 0.7f;
