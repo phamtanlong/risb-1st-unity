@@ -2,7 +2,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class MouseOrbitFast : MonoBehaviour 
+public class MouseOrbitShift : MonoBehaviour 
 {
     public Transform target;
     public float distance = 10.0f;
@@ -18,9 +18,6 @@ public class MouseOrbitFast : MonoBehaviour
 
     void Start ()
     {
-		distance = Vector3.Distance(transform.position, target.transform.position);
-		print (distance);
-		
         var angles = transform.eulerAngles;
         x = angles.y;
         y = angles.x;
@@ -29,17 +26,16 @@ public class MouseOrbitFast : MonoBehaviour
         if (rigidbody) 
             rigidbody.freezeRotation = true;
     }
-
+	
+	
     void Update ()
     {
-		distance = Vector3.Distance(transform.position, target.transform.position);
-		
-		if(Input.GetMouseButton(0))
+		if(Input.GetMouseButton(0) && (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift)))
 		{
 	        if (target)
 	        {
-	            x += 0.1f*Input.GetAxis("Mouse X") * xSpeed * Time.deltaTime;
-	            y -= 0.1f*Input.GetAxis("Mouse Y") * ySpeed * Time.deltaTime;
+	            x += 0.7f*Input.GetAxis("Mouse X") * xSpeed * Time.deltaTime;
+	            y -= 0.7f*Input.GetAxis("Mouse Y") * ySpeed * Time.deltaTime;
 	
 	            y = ClampAngle(y, yMinLimit, yMaxLimit);
 	
