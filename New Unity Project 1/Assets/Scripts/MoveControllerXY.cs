@@ -4,7 +4,6 @@ using UnityEngine;
 using System.Collections;
 
 
-
 [RequireComponent(typeof(MeshCollider))]
 public class MoveControllerXY : MonoBehaviour 
 {
@@ -20,7 +19,7 @@ public class MoveControllerXY : MonoBehaviour
 	
 	//
 	private bool enableMove = true;
-	private float RADIUS = 1.0f;
+	private float RADIUS = 0.7f;
 	private bool isNear = true;
 	private bool isFirstTime = true;
 	private Vector3 startPosition;
@@ -36,12 +35,13 @@ public class MoveControllerXY : MonoBehaviour
 			obj6.itCanMove &&
 			obj7.itCanMove) 
 		{
+			//print("it can move");
 			enableMove = true;
 			if(isFirstTime == true)
 			{
 				startPosition = transform.position;
 				Vector3 position = transform.position;
-				position.z -= 0.5f;
+				position.z -= 0.1f;
 				transform.position = position;
 				isFirstTime = false;
 			}
@@ -49,6 +49,7 @@ public class MoveControllerXY : MonoBehaviour
 		}
 		else 
 		{
+			//print("it can NOT move");
 			enableMove = false;
 		}
 	}
@@ -60,7 +61,7 @@ public class MoveControllerXY : MonoBehaviour
 			Vector3 mouseCurrentPoint = new Vector3(Input.mousePosition.x, Input.mousePosition.y, Input.mousePosition.z);
 			Vector3 delta = mouseCurrentPoint - mouseLastPoint;
 			
-			transform.position += 0.03f * delta;
+			transform.position += 0.02f * delta;
 			
 			float dx = transform.position.x - startPosition.x;
 			float dy = transform.position.y - startPosition.y;
@@ -81,6 +82,6 @@ public class MoveControllerXY : MonoBehaviour
 			mouseLastPoint = mouseCurrentPoint;
 		}
 		
-		print(transform.position);
+		//print(transform.position);
 	}
 }
