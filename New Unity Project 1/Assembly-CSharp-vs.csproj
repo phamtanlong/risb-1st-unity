@@ -47,6 +47,7 @@
      <Compile Include="Assets\Scripts\MouseController.cs" />
      <Compile Include="Assets\Scripts\MouseOrbit.cs" />
      <Compile Include="Assets\Scripts\MouseOrbitFast.cs" />
+     <Compile Include="Assets\Scripts\MouseOrbitShift.cs" />
      <Compile Include="Assets\Scripts\MoveControllerXY.cs" />
      <Compile Include="Assets\Scripts\MoveControllerZ.cs" />
      <Compile Include="Assets\Scripts\MoveShift.cs" />
